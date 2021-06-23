@@ -58,8 +58,32 @@ def get_languages_influenced(language_html_infobox):
         return
 
 
+# Find the languages that the parameter has been influenced by.
+def get_languages_influenced_by(language_html_infobox):
+    try:
+        table_rows = language_html_infobox.find_all("tr")
+        for i in range(0, len(table_rows) - 1):
+            try:
+                if table_rows[i].get_text() == "Influenced by":
+                    out = []
+                    for j in table_rows[i + 1].find_all("a"):
+                        try:
+                            out.append(j['title'])
+                        except:
+                            continue
+                    return out
+            except:
+                continue
+        return
+    except:
+        return
+
+
 temp_languages_influenced = get_languages_influenced(temp_html_infobox)
 print("\nJavaScript influenced:\n {influenced}".format(influenced=temp_languages_influenced))
+
+temp_languages_influenced_by = get_languages_influenced_by(temp_html_infobox)
+print("\nJavaScript was influenced by:\n {influenced_by}".format(influenced_by=temp_languages_influenced_by))
 
 # # get some metadata
 # def getYear(t):
