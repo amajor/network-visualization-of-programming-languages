@@ -3,6 +3,8 @@
 Created by following [Peter Gleeson's](https://medium.com/@petergleeson1) 2017 article,
 [How to visualize the programming language influence graph](https://medium.com/free-code-camp/how-to-visualize-the-programming-language-influence-graph-7f1b765b44d1).
 
+View the network generated from this source code at https://amajor.github.io/network-visualization-of-programming-languages/network/index.html.
+
 ## Dependencies
 
 - [ ] Python (3.8.2)
