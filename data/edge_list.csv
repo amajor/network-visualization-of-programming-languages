@@ -1,184 +1,184 @@
-Source;Target
-ALGOL;PL/I
-ALGOL;Simula
-ALGOL;BCPL
-ALGOL;B (programming language)
-ALGOL;Pascal (programming language)
-ALGOL;C (programming language)
-AWK;Tcl
-AWK;AMPL
-AWK;Perl
-AWK;Lua (programming language)
-ActionScript;Haxe
-BASIC;COMAL
-BASIC;GRASS (programming language)
-BCPL;B (programming language)
-BCPL;C (programming language)
-BCPL;Go (programming language)
-C++;Ada (programming language)
-C++;C Sharp (programming language)
-C++;Chapel (programming language)
-C++;Clojure
-C++;D (programming language)
-C++;Java (programming language)
-C++;Lua (programming language)
-C++;Nim (programming language)
-C++;Perl
-C++;PHP
-C++;Python (programming language)
-C++;Rust (programming language)
-C++;Seed7
-COBOL;CobolScript
-COBOL;EGL (programming language)
-COBOL;PL/I
-COBOL;Programming Language for Business
-COMIT;SNOBOL
-COMTRAN;COBOL
-COWSEL;POP-2
-Caml;OCaml
-Clojure;Elixir (programming language)
-CoffeeScript;LiveScript
-DBase;Clipper (programming language)
-DBase;Harbour (software)
-FLOW-MATIC;MATH-MATIC
-FLOW-MATIC;COBOL
-Fortran;ALGOL 58
-Fortran;BASIC
-Fortran;C (programming language)
-Fortran;Chapel (programming language)
-Fortran;CMS-2 (programming language)
-Fortran;Fortress (programming language)
-Fortran;PL/I
-Fortran;MUMPS
-Fortran;IDL (programming language)
-Fortran;Ratfor
-HyperTalk;ActionScript
-HyperTalk;AppleScript
-HyperTalk;ECMAScript
-HyperTalk;JavaScript
-HyperTalk;Lingo (programming language)
-HyperTalk;LiveCode
-HyperTalk;SenseTalk
-HyperTalk;SuperTalk
-JOSS;TELCOMP
-JOSS;FOCAL (programming language)
-JOSS;MUMPS
-JOVIAL;CMS-2 (programming language)
-JOVIAL;Coral 66
-JOVIAL;SYMPL
-JavaScript;TypeScript
-JavaScript;CoffeeScript
-JavaScript;ActionScript
-JavaScript;Dart (programming language)
-JavaScript;Objective-J
-JavaScript;Opa (programming language)
-JavaScript;Haxe
-MATLAB;Julia (programming language)
-MATLAB;GNU Octave
-MATLAB;Scilab
-MUMPS;Caché ObjectScript
-Modula;Alma-0
-Modula;Go (programming language)
-Modula;Modula-2
-Modula-2;Modula-3
-Modula-2;Oberon (programming language)
-Modula-2;Ada (programming language)
-Modula-2;Lua (programming language)
-Modula-2;Seed7
-Modula-3;C Sharp (programming language)
-Modula-3;Java (programming language)
-Modula-3;Nim (programming language)
-Modula-3;OCaml
-Modula-3;Python (programming language)
-OCaml;Coq
-OCaml;Elm (programming language)
-OCaml;F Sharp (programming language)
-OCaml;F* (programming language)
-OCaml;Haxe
-OCaml;Opa (programming language)
-OCaml;Rust (programming language)
-OCaml;Scala (programming language)
-ObjectLOGO;NetLogo
-ObjectLOGO;Smalltalk
-ObjectLOGO;Etoys (programming language)
-ObjectLOGO;Scratch (programming language)
-ObjectLOGO;REBOL
-Objective-C;Java (programming language)
-Objective-C;Nu (programming language)
-Objective-C;Objective-J
-Objective-C;Swift (programming language)
-PHP;Hack (programming language)
-PL/I;Control Language
-PL/I;PL/M
-PL/I;REXX
-PL360;ALGOL W
-Perl;CoffeeScript
-Perl;JavaScript
-Perl;Julia (programming language)
-Perl;LPC (programming language)
-Perl;PHP
-Perl;Python (programming language)
-Perl;Raku (programming language)
-Perl;Ruby (programming language)
-Perl;PowerShell
-Prolog;Constraint Handling Rules
-Prolog;Clojure
-Prolog;Datalog
-Prolog;Erlang (programming language)
-Prolog;Mercury (programming language)
-Prolog;Oz (programming language)
-Prolog;Strand (programming language)
-Prolog;Visual Prolog
-Prolog;XSB
-REBOL;Red (programming language)
-REXX;NetRexx
-REXX;Object REXX
-Rc;Es (Unix shell)
-SETL;ABC (programming language)
-SISAL;Haskell (programming language)
-SNOBOL;AWK
-SNOBOL;Icon (programming language)
-SNOBOL;Lua (programming language)
-SP/k;Turing (programming language)
-SQL;PowerShell
-Sather;Cool (programming language)
-Sed;Perl
-Sed;AWK
-Smalltalk;AppleScript
-Smalltalk;Dart (programming language)
-Smalltalk;Dylan (programming language)
-Smalltalk;Erlang (programming language)
-Smalltalk;Etoys (programming language)
-Smalltalk;Go (programming language)
-Smalltalk;Io (programming language)
-Smalltalk;Java (programming language)
-Smalltalk;Lasso (programming language)
-Smalltalk;Logtalk
-Smalltalk;Newspeak (programming language)
-Smalltalk;NewtonScript
-Smalltalk;Object REXX
-Smalltalk;Objective-C
-Smalltalk;PHP
-Smalltalk;Python (programming language)
-Smalltalk;Raku (programming language)
-Smalltalk;Ruby (programming language)
-Smalltalk;Scala (programming language)
-Smalltalk;Scratch (programming language)
-Smalltalk;Self (programming language)
-Speedcoding;Fortran
-Speedcoding;ALGOL 58
-Speedcoding;BASIC
-Speedcoding;C (programming language)
-Speedcoding;PL/I
-Speedcoding;MUMPS
-Speedcoding;Ratfor
-Squeak;Etoys (programming language)
-Squeak;Scratch (programming language)
-Starlogo;NetLogo
-Starlogo;Etoys (programming language)
-Strongtalk;Java (programming language)
-TELCOMP;MUMPS
-Tcl;PHP
-Tcl;Tea (programming language)
-Verilog;SystemVerilog
-ZetaLisp;Common Lisp
+Source;Target;Label
+ALGOL;PL/I;ALGOL
+ALGOL;Simula;ALGOL
+ALGOL;BCPL;ALGOL
+ALGOL;B (programming language);ALGOL
+ALGOL;Pascal (programming language);ALGOL
+ALGOL;C (programming language);ALGOL
+AWK;Tcl;AWK
+AWK;AMPL;AWK
+AWK;Perl;AWK
+AWK;Lua (programming language);AWK
+ActionScript;Haxe;ActionScript
+BASIC;COMAL;BASIC
+BASIC;GRASS (programming language);BASIC
+BCPL;B (programming language);BCPL
+BCPL;C (programming language);BCPL
+BCPL;Go (programming language);BCPL
+C++;Ada (programming language);C++
+C++;C Sharp (programming language);C++
+C++;Chapel (programming language);C++
+C++;Clojure;C++
+C++;D (programming language);C++
+C++;Java (programming language);C++
+C++;Lua (programming language);C++
+C++;Nim (programming language);C++
+C++;Perl;C++
+C++;PHP;C++
+C++;Python (programming language);C++
+C++;Rust (programming language);C++
+C++;Seed7;C++
+COBOL;CobolScript;COBOL
+COBOL;EGL (programming language);COBOL
+COBOL;PL/I;COBOL
+COBOL;Programming Language for Business;COBOL
+COMIT;SNOBOL;COMIT
+COMTRAN;COBOL;COMTRAN
+COWSEL;POP-2;COWSEL
+Caml;OCaml;Caml
+Clojure;Elixir (programming language);Clojure
+CoffeeScript;LiveScript;CoffeeScript
+DBase;Clipper (programming language);DBase
+DBase;Harbour (software);DBase
+FLOW-MATIC;MATH-MATIC;FLOW-MATIC
+FLOW-MATIC;COBOL;FLOW-MATIC
+Fortran;ALGOL 58;Fortran
+Fortran;BASIC;Fortran
+Fortran;C (programming language);Fortran
+Fortran;Chapel (programming language);Fortran
+Fortran;CMS-2 (programming language);Fortran
+Fortran;Fortress (programming language);Fortran
+Fortran;PL/I;Fortran
+Fortran;MUMPS;Fortran
+Fortran;IDL (programming language);Fortran
+Fortran;Ratfor;Fortran
+HyperTalk;ActionScript;HyperTalk
+HyperTalk;AppleScript;HyperTalk
+HyperTalk;ECMAScript;HyperTalk
+HyperTalk;JavaScript;HyperTalk
+HyperTalk;Lingo (programming language);HyperTalk
+HyperTalk;LiveCode;HyperTalk
+HyperTalk;SenseTalk;HyperTalk
+HyperTalk;SuperTalk;HyperTalk
+JOSS;TELCOMP;JOSS
+JOSS;FOCAL (programming language);JOSS
+JOSS;MUMPS;JOSS
+JOVIAL;CMS-2 (programming language);JOVIAL
+JOVIAL;Coral 66;JOVIAL
+JOVIAL;SYMPL;JOVIAL
+JavaScript;TypeScript;JavaScript
+JavaScript;CoffeeScript;JavaScript
+JavaScript;ActionScript;JavaScript
+JavaScript;Dart (programming language);JavaScript
+JavaScript;Objective-J;JavaScript
+JavaScript;Opa (programming language);JavaScript
+JavaScript;Haxe;JavaScript
+MATLAB;Julia (programming language);MATLAB
+MATLAB;GNU Octave;MATLAB
+MATLAB;Scilab;MATLAB
+MUMPS;Caché ObjectScript;MUMPS
+Modula;Alma-0;Modula
+Modula;Go (programming language);Modula
+Modula;Modula-2;Modula
+Modula-2;Modula-3;Modula-2
+Modula-2;Oberon (programming language);Modula-2
+Modula-2;Ada (programming language);Modula-2
+Modula-2;Lua (programming language);Modula-2
+Modula-2;Seed7;Modula-2
+Modula-3;C Sharp (programming language);Modula-3
+Modula-3;Java (programming language);Modula-3
+Modula-3;Nim (programming language);Modula-3
+Modula-3;OCaml;Modula-3
+Modula-3;Python (programming language);Modula-3
+OCaml;Coq;OCaml
+OCaml;Elm (programming language);OCaml
+OCaml;F Sharp (programming language);OCaml
+OCaml;F* (programming language);OCaml
+OCaml;Haxe;OCaml
+OCaml;Opa (programming language);OCaml
+OCaml;Rust (programming language);OCaml
+OCaml;Scala (programming language);OCaml
+ObjectLOGO;NetLogo;ObjectLOGO
+ObjectLOGO;Smalltalk;ObjectLOGO
+ObjectLOGO;Etoys (programming language);ObjectLOGO
+ObjectLOGO;Scratch (programming language);ObjectLOGO
+ObjectLOGO;REBOL;ObjectLOGO
+Objective-C;Java (programming language);Objective-C
+Objective-C;Nu (programming language);Objective-C
+Objective-C;Objective-J;Objective-C
+Objective-C;Swift (programming language);Objective-C
+PHP;Hack (programming language);PHP
+PL/I;Control Language;PL/I
+PL/I;PL/M;PL/I
+PL/I;REXX;PL/I
+PL360;ALGOL W;PL360
+Perl;CoffeeScript;Perl
+Perl;JavaScript;Perl
+Perl;Julia (programming language);Perl
+Perl;LPC (programming language);Perl
+Perl;PHP;Perl
+Perl;Python (programming language);Perl
+Perl;Raku (programming language);Perl
+Perl;Ruby (programming language);Perl
+Perl;PowerShell;Perl
+Prolog;Constraint Handling Rules;Prolog
+Prolog;Clojure;Prolog
+Prolog;Datalog;Prolog
+Prolog;Erlang (programming language);Prolog
+Prolog;Mercury (programming language);Prolog
+Prolog;Oz (programming language);Prolog
+Prolog;Strand (programming language);Prolog
+Prolog;Visual Prolog;Prolog
+Prolog;XSB;Prolog
+REBOL;Red (programming language);REBOL
+REXX;NetRexx;REXX
+REXX;Object REXX;REXX
+Rc;Es (Unix shell);Rc
+SETL;ABC (programming language);SETL
+SISAL;Haskell (programming language);SISAL
+SNOBOL;AWK;SNOBOL
+SNOBOL;Icon (programming language);SNOBOL
+SNOBOL;Lua (programming language);SNOBOL
+SP/k;Turing (programming language);SP/k
+SQL;PowerShell;SQL
+Sather;Cool (programming language);Sather
+Sed;Perl;Sed
+Sed;AWK;Sed
+Smalltalk;AppleScript;Smalltalk
+Smalltalk;Dart (programming language);Smalltalk
+Smalltalk;Dylan (programming language);Smalltalk
+Smalltalk;Erlang (programming language);Smalltalk
+Smalltalk;Etoys (programming language);Smalltalk
+Smalltalk;Go (programming language);Smalltalk
+Smalltalk;Io (programming language);Smalltalk
+Smalltalk;Java (programming language);Smalltalk
+Smalltalk;Lasso (programming language);Smalltalk
+Smalltalk;Logtalk;Smalltalk
+Smalltalk;Newspeak (programming language);Smalltalk
+Smalltalk;NewtonScript;Smalltalk
+Smalltalk;Object REXX;Smalltalk
+Smalltalk;Objective-C;Smalltalk
+Smalltalk;PHP;Smalltalk
+Smalltalk;Python (programming language);Smalltalk
+Smalltalk;Raku (programming language);Smalltalk
+Smalltalk;Ruby (programming language);Smalltalk
+Smalltalk;Scala (programming language);Smalltalk
+Smalltalk;Scratch (programming language);Smalltalk
+Smalltalk;Self (programming language);Smalltalk
+Speedcoding;Fortran;Speedcoding
+Speedcoding;ALGOL 58;Speedcoding
+Speedcoding;BASIC;Speedcoding
+Speedcoding;C (programming language);Speedcoding
+Speedcoding;PL/I;Speedcoding
+Speedcoding;MUMPS;Speedcoding
+Speedcoding;Ratfor;Speedcoding
+Squeak;Etoys (programming language);Squeak
+Squeak;Scratch (programming language);Squeak
+Starlogo;NetLogo;Starlogo
+Starlogo;Etoys (programming language);Starlogo
+Strongtalk;Java (programming language);Strongtalk
+TELCOMP;MUMPS;TELCOMP
+Tcl;PHP;Tcl
+Tcl;Tea (programming language);Tcl
+Verilog;SystemVerilog;Verilog
+ZetaLisp;Common Lisp;ZetaLisp
