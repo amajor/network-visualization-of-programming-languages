@@ -8,15 +8,19 @@ import re
 # https://en.wikipedia.org/wiki/List_of_programming_languages
 pageTitle = "List of programming languages"
 nodes = list(wikipedia.page(pageTitle).links)
-print(nodes)
-print("\nWe found {items} items listed in Wikipedia's list of programming languages.".format(items=len(nodes)))
+print("\nNodes found in the page, '{page}':\n{nodes}".format(page=pageTitle, nodes=nodes))
+
+# # Print the number of list items found in total.
+# print("\nWe found {items} items listed in Wikipedia's list of programming languages.".format(items=len(nodes)))
 
 # Remove items from the list that are not programming languages.
 # These are lists, timelines, comparisons, etc.
 removeList = ["List of", "Lists of", "Timeline", "Comparison of", "History of", "Esoteric programming language"]
 nodes = [i for i in nodes if not any(r in i for r in removeList)]
-print("We found {languages} programming languages listed in Wikipedia's list of programming languages."
-      .format(languages=len(nodes)))
+
+# # Print the number of programming languages found (removing lists, comparisons, timelines, etc).
+# print("We found {languages} programming languages listed in Wikipedia's list of programming languages."
+#       .format(languages=len(nodes)))
 
 # Base link to Wikipedia.
 base = "https://en.wikipedia.org/wiki/"
@@ -104,6 +108,7 @@ edgeList = [["Source,Target"]]
 meta = [["Id", "Year"]]
 
 # Loop through each node, collecting data and appending to lists.
+print("\n\nFinding edges...\n")
 for n in nodes:
     try:
         temp = get_soup(n)
@@ -121,16 +126,27 @@ for n in nodes:
     year = get_year_first_appeared(temp)
     meta.append([n, year])
 
-print("\nEdge List:\n{}.".format(edgeList))
-print("\nMeta Data List:\n{}.".format(meta))
+# # Print out the edge list and meta data into the terminal.
+# print("\nEdge List:\n{}.".format(edgeList))
+# print("\nMeta Data List:\n{}.".format(meta))
 
-# # finally - write CSV files to import into Gephi
-# with open("./data/edge_list.csv", "w") as f:
-#     wr = csv.writer(f)
-#     for e in edgeList:
-#         wr.writerow(e)
-#
-# with open("./data/metadata.csv", "w") as f2:
-#     wr = csv.writer(f2)
-#     for m in meta:
-#         wr.writerow(m)
+# Write CSV file for the Edge List (to be used in Gephi).
+file_edge_list = "./data/edge_list.csv"
+with open(file_edge_list, "w") as f:
+    wr = csv.writer(f)
+    for e in edgeList:
+        wr.writerow(e)
+
+# Write CSV file for the Meta Data List (to be used in Gephi).
+file_meta_data = "./data/metadata.csv"
+with open(file_meta_data, "w") as f2:
+    wr = csv.writer(f2)
+    for m in meta:
+        wr.writerow(m)
+
+# Print the number of programming languages found (removing lists, comparisons, timelines, etc).
+print("\nWe found {languages} programming languages listed in Wikipedia's list of programming languages."
+      .format(languages=len(nodes)))
+
+print("  Edge Cases have been written to the file {}".format(file_edge_list))
+print("  Meta Data has been written to the file   {}".format(file_meta_data))
