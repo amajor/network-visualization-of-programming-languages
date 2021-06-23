@@ -33,10 +33,6 @@ def get_soup(n):
         pass
 
 
-temp_html_infobox = get_soup('JavaScript')
-print("\nJavaScript HTML:\n {soup}".format(soup=temp_html_infobox))
-
-
 # Find the languages that have been influenced by the parameter.
 def get_languages_influenced(language_html_infobox):
     try:
@@ -79,13 +75,6 @@ def get_languages_influenced_by(language_html_infobox):
         return
 
 
-temp_languages_influenced = get_languages_influenced(temp_html_infobox)
-print("\nJavaScript influenced:\n {influenced}".format(influenced=temp_languages_influenced))
-
-temp_languages_influenced_by = get_languages_influenced_by(temp_html_infobox)
-print("\nJavaScript was influenced by:\n {influenced_by}".format(influenced_by=temp_languages_influenced_by))
-
-
 # Discover the year that the language first appeared.
 def get_year_first_appeared(language_html_infobox):
     try:
@@ -97,31 +86,44 @@ def get_year_first_appeared(language_html_infobox):
         return "Could not determine the year first appeared. :("
 
 
-temp_year_appeared = get_year_first_appeared(temp_html_infobox)
-print("\nJavaScript first appeared in {year}.".format(year=temp_year_appeared))
+# # Sample tests for running only on JavaScript page.
+# temp_html_infobox = get_soup('JavaScript')
+# print("\nJavaScript HTML:\n {soup}".format(soup=temp_html_infobox))
+#
+# temp_languages_influenced = get_languages_influenced(temp_html_infobox)
+# print("\nJavaScript influenced:\n {influenced}".format(influenced=temp_languages_influenced))
+#
+# temp_languages_influenced_by = get_languages_influenced_by(temp_html_infobox)
+# print("\nJavaScript was influenced by:\n {influenced_by}".format(influenced_by=temp_languages_influenced_by))
+#
+# temp_year_appeared = get_year_first_appeared(temp_html_infobox)
+# print("\nJavaScript first appeared in {year}.".format(year=temp_year_appeared))
 
-# # create list objects to store data
-# edgeList = [["Source,Target"]]
-# meta = [["Id", "Year"]]
-#
-# # go through each node, use functions defined earlier to collect data and append to lists
-# for n in nodes:
-#     try:
-#         temp = getSoup(n)
-#     except:
-#         continue
-#     try:
-#         influenced = getLinks(temp)
-#         for link in influenced:
-#             if link in nodes:
-#                 edgeList.append([n + "," + link])
-#                 print([n + "," + link])
-#     except:
-#         continue
-#
-#     year = getYear(temp)
-#     meta.append([n, year])
-#
+# Create list objects to store data for each language
+edgeList = [["Source,Target"]]
+meta = [["Id", "Year"]]
+
+# Loop through each node, collecting data and appending to lists.
+for n in nodes:
+    try:
+        temp = get_soup(n)
+    except:
+        continue
+    try:
+        influenced = get_languages_influenced(temp)
+        for link in influenced:
+            if link in nodes:
+                edgeList.append([n + "," + link])
+                print([n + "," + link])
+    except:
+        continue
+
+    year = get_year_first_appeared(temp)
+    meta.append([n, year])
+
+print("\nEdge List:\n{}.".format(edgeList))
+print("\nMeta Data List:\n{}.".format(meta))
+
 # # finally - write CSV files to import into Gephi
 # with open("./data/edge_list.csv", "w") as f:
 #     wr = csv.writer(f)
