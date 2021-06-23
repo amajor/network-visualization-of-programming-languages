@@ -33,8 +33,33 @@ def get_soup(n):
         pass
 
 
-temp = get_soup('JavaScript')
-print("\nJavaScript HTML:\n {soup}".format(soup=temp))
+temp_html_infobox = get_soup('JavaScript')
+print("\nJavaScript HTML:\n {soup}".format(soup=temp_html_infobox))
+
+
+# Find the languages that have been influenced by the parameter.
+def get_languages_influenced(language_html_infobox):
+    try:
+        table_rows = language_html_infobox.find_all("tr")
+        for i in range(0, len(table_rows) - 1):
+            try:
+                if table_rows[i].get_text() == "Influenced":
+                    out = []
+                    for j in table_rows[i + 1].find_all("a"):
+                        try:
+                            out.append(j['title'])
+                        except:
+                            continue
+                    return out
+            except:
+                continue
+        return
+    except:
+        return
+
+
+temp_languages_influenced = get_languages_influenced(temp_html_infobox)
+print("\nJavaScript influenced:\n {influenced}".format(influenced=temp_languages_influenced))
 
 # # get some metadata
 # def getYear(t):
@@ -45,28 +70,6 @@ print("\nJavaScript HTML:\n {soup}".format(soup=temp))
 #         return int(year)
 #     except:
 #         return "Could not determine :("
-#
-#
-# # function to find the links for a given language
-# def getLinks(t):
-#     try:
-#         table_rows = t.find_all("tr")
-#         for i in range(0, len(table_rows) - 1):
-#             try:
-#                 if table_rows[i].get_text() == "\nInfluenced\n":
-#                     out = []
-#                     for j in table_rows[i + 1].find_all("a"):
-#                         try:
-#                             out.append(j['title'])
-#                         except:
-#                             continue
-#                     return out
-#             except:
-#                 continue
-#         return
-#     except:
-#         return
-#
 #
 # # create list objects to store data
 # edgeList = [["Source,Target"]]
