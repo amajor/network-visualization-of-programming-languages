@@ -18,21 +18,24 @@ nodes = [i for i in nodes if not any(r in i for r in removeList)]
 print("We found {languages} programming languages listed in Wikipedia's list of programming languages."
       .format(languages=len(nodes)))
 
-# # define some functions
-# base = "https://en.wikipedia.org/wiki/"
-#
-#
-# # get HTML
-# def getSoup(n):
-#     try:
-#         with urllib.request.urlopen(base + n) as response:
-#             soup = BS(response.read(), 'html.parser')
-#         table = soup.find_all("table", class_="infobox vevent")[0]
-#         return table
-#     except:
-#         pass
-#
-#
+# Base link to Wikipedia.
+base = "https://en.wikipedia.org/wiki/"
+
+
+# Get HTML from a particular page on Wikipedia.
+def get_soup(n):
+    try:
+        with urllib.request.urlopen(base + n) as response:
+            soup = BS(response.read(), 'html.parser')
+        table = soup.find_all("table", class_="infobox vevent")[0]
+        return table
+    except:
+        pass
+
+
+temp = get_soup('JavaScript')
+print("\nJavaScript HTML:\n {soup}".format(soup=temp))
+
 # # get some metadata
 # def getYear(t):
 #     try:
