@@ -9,12 +9,15 @@ import re
 pageTitle = "List of programming languages"
 nodes = list(wikipedia.page(pageTitle).links)
 print(nodes)
-print("We found {items} items listed in Wikipedia's list of programming languages.".format(items=len(nodes)))
+print("\nWe found {items} items listed in Wikipedia's list of programming languages.".format(items=len(nodes)))
 
-# # remove unwanted links
-# removeList = ["List of", "Lists of", "Timeline", "Comparison of", "History of", "Esoteric programming language"]
-# nodes = [i for i in nodes if not any(r in i for r in removeList)]
-#
+# Remove items from the list that are not programming languages.
+# These are lists, timelines, comparisons, etc.
+removeList = ["List of", "Lists of", "Timeline", "Comparison of", "History of", "Esoteric programming language"]
+nodes = [i for i in nodes if not any(r in i for r in removeList)]
+print("We found {languages} programming languages listed in Wikipedia's list of programming languages."
+      .format(languages=len(nodes)))
+
 # # define some functions
 # base = "https://en.wikipedia.org/wiki/"
 #
