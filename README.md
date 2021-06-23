@@ -7,5 +7,5 @@ Created by following [Peter Gleeson's](https://medium.com/@petergleeson1) 2017 a
 
 -[ ] Python (3.8.2)
    -[ ] `pip3 install wikipedia`
--[ ] Gephi
+-[ ] [Gephi](https://gephi.org/users/download/)
 -[ ] Sigma.js

@@ -84,7 +84,8 @@ def get_year_first_appeared(language_html_infobox):
 
 
 # Create list objects to store data for each language
-edgeList = [["Source,Target"]]
+separator = ";"
+edgeList = [[f"Source{separator}Target".format(separator=separator)]]
 meta = [["Id", "Year"]]
 
 # Loop through each node, collecting data and appending to lists.
@@ -98,8 +99,8 @@ for n in nodes:
         influenced = get_languages_influenced(temp)
         for link in influenced:
             if link in nodes:
-                edgeList.append([n + "," + link])
-                print([n + "," + link])
+                edgeList.append([n + separator + link])
+                print([n + separator + link])
     except:
         continue
 
