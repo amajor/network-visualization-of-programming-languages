@@ -5,10 +5,10 @@ Created by following [Peter Gleeson's](https://medium.com/@petergleeson1) 2017 a
 
 ## Dependencies
 
--[ ] Python (3.8.2)
-   -[ ] `pip3 install wikipedia`
--[ ] [Gephi](https://gephi.org/users/download/)
--[ ] [Sigma.js](http://sigmajs.org/)
+- [ ] Python (3.8.2)
+   - [ ] `pip3 install wikipedia`
+- [ ] [Gephi](https://gephi.org/users/download/)
+- [ ] [Sigma.js](http://sigmajs.org/)
 
 ## Run Graph Locally
 
