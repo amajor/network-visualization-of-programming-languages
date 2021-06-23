@@ -85,16 +85,21 @@ print("\nJavaScript influenced:\n {influenced}".format(influenced=temp_languages
 temp_languages_influenced_by = get_languages_influenced_by(temp_html_infobox)
 print("\nJavaScript was influenced by:\n {influenced_by}".format(influenced_by=temp_languages_influenced_by))
 
-# # get some metadata
-# def getYear(t):
-#     try:
-#         t = t.get_text()
-#         year = t[t.find("appear"):t.find("appear") + 30]
-#         year = re.match(r'.*([1-3][0-9]{3})', year).group(1)
-#         return int(year)
-#     except:
-#         return "Could not determine :("
-#
+
+# Discover the year that the language first appeared.
+def get_year_first_appeared(language_html_infobox):
+    try:
+        all_text = language_html_infobox.get_text()
+        year = all_text[all_text.find("appear"):all_text.find("appear") + 30]
+        year = re.match(r'.*([1-3][0-9]{3})', year).group(1)
+        return int(year)
+    except:
+        return "Could not determine the year first appeared. :("
+
+
+temp_year_appeared = get_year_first_appeared(temp_html_infobox)
+print("\nJavaScript first appeared in {year}.".format(year=temp_year_appeared))
+
 # # create list objects to store data
 # edgeList = [["Source,Target"]]
 # meta = [["Id", "Year"]]
