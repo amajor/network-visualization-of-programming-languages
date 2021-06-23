@@ -10,17 +10,10 @@ pageTitle = "List of programming languages"
 nodes = list(wikipedia.page(pageTitle).links)
 print("\nNodes found in the page, '{page}':\n{nodes}".format(page=pageTitle, nodes=nodes))
 
-# # Print the number of list items found in total.
-# print("\nWe found {items} items listed in Wikipedia's list of programming languages.".format(items=len(nodes)))
-
 # Remove items from the list that are not programming languages.
 # These are lists, timelines, comparisons, etc.
 removeList = ["List of", "Lists of", "Timeline", "Comparison of", "History of", "Esoteric programming language"]
 nodes = [i for i in nodes if not any(r in i for r in removeList)]
-
-# # Print the number of programming languages found (removing lists, comparisons, timelines, etc).
-# print("We found {languages} programming languages listed in Wikipedia's list of programming languages."
-#       .format(languages=len(nodes)))
 
 # Base link to Wikipedia.
 base = "https://en.wikipedia.org/wiki/"
@@ -90,19 +83,6 @@ def get_year_first_appeared(language_html_infobox):
         return "Could not determine the year first appeared. :("
 
 
-# # Sample tests for running only on JavaScript page.
-# temp_html_infobox = get_soup('JavaScript')
-# print("\nJavaScript HTML:\n {soup}".format(soup=temp_html_infobox))
-#
-# temp_languages_influenced = get_languages_influenced(temp_html_infobox)
-# print("\nJavaScript influenced:\n {influenced}".format(influenced=temp_languages_influenced))
-#
-# temp_languages_influenced_by = get_languages_influenced_by(temp_html_infobox)
-# print("\nJavaScript was influenced by:\n {influenced_by}".format(influenced_by=temp_languages_influenced_by))
-#
-# temp_year_appeared = get_year_first_appeared(temp_html_infobox)
-# print("\nJavaScript first appeared in {year}.".format(year=temp_year_appeared))
-
 # Create list objects to store data for each language
 edgeList = [["Source,Target"]]
 meta = [["Id", "Year"]]
@@ -125,10 +105,6 @@ for n in nodes:
 
     year = get_year_first_appeared(temp)
     meta.append([n, year])
-
-# # Print out the edge list and meta data into the terminal.
-# print("\nEdge List:\n{}.".format(edgeList))
-# print("\nMeta Data List:\n{}.".format(meta))
 
 # Write CSV file for the Edge List (to be used in Gephi).
 file_edge_list = "./data/edge_list.csv"
